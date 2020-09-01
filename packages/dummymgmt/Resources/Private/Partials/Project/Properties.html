@@ -7,9 +7,14 @@
 	</tr>
     <tr>
 		<td>
-            <f:for as="publication" each="{project.publications}">
-                <f:link.action action="show" controller="Publication" arguments="{publication:publication}" pageUid="2100">{publication.title}</f:link.action><br />
-            </f:for>
+            <f:if condition="{project.publications}">
+                <f:then>
+                    <f:for as="publication" each="{project.publications}">
+                        <f:link.action action="show" controller="Publication" arguments="{publication:publication}" pageUid="2100">{publication.title}</f:link.action><br />
+                    </f:for>
+                </f:then>
+                <f:else>keine publikationen</f:else>
+            </f:if>
 		</td>
 	</tr>
     <tr>
