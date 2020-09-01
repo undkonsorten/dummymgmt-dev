@@ -12,8 +12,6 @@ call_user_func(
         );
 
         $pluginSignature = str_replace('_', '', 'dummymgmt') . '_dummytestplugin';
-        $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:dummymgmt/Configuration/FlexForms/flexform_dummytestplugin.xml');
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('dummymgmt', 'Configuration/TypoScript', 'dummymgmt');
 
