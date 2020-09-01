@@ -2,6 +2,7 @@
 #### DEPENDENCIES ####
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dummymgmt/Configuration/TypoScript/constants.typoscript">
 
 
 ############
@@ -57,4 +58,10 @@ plugin.bootstrap_package_contentelements {
 plugin.bootstrap_package.settings.scss {
     primary = #eb3e4a
     secondary = #013859
+}
+
+plugin.tx_dummymgmt_dummytestplugin {
+    persistence {
+        storagePid = 9
+    }
 }
