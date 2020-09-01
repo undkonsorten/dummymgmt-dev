@@ -28,3 +28,7 @@ page {
 #        dummymgmt_site_scripts = EXT:dummymgmt_site/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
+
+config {
+    contentObjectExceptionHandler = 0
+}
