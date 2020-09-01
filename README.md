@@ -20,3 +20,7 @@ go to the cloned directory and run:
 After successfully starting the project you have to install dependencies
 
     ddev composer install
+    
+Import database
+
+    ddev import-db --src=fixtures/database/dump.sql.gz
