@@ -24,3 +24,10 @@ After successfully starting the project you have to install dependencies
 Import database
 
     ddev import-db --src=fixtures/database/dump.sql.gz
+    
+## Test in TYPO3 10
+
+Switch to branch feature/typo3-10.
+
+After ddev composer install you should have a running TYPO3 10 system.
+The database dump in repository is from 9.5. You have to run all upgrade wizards and database compare in install tool.
