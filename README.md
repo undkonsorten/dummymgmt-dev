@@ -24,6 +24,13 @@ After successfully starting the project you have to install dependencies
 Import database
 
     ddev import-db --src=fixtures/database/dump.sql.gz
+
+Login in backend with
+
+user: admin
+pass: joh316
+
+or use the auto login feature. Should be installed automatically so you automatically logged in.
     
 ## Test in TYPO3 10
 
