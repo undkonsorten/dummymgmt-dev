@@ -1,17 +1,32 @@
 base: 'https://dummymgmt.ddev.site/'
+baseVariants: {  }
 errorHandling: {  }
 languages:
   -
+    title: Deutsch
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: default
+    locale: de_DE.UTF-8
+    iso-639-1: de
+    navigationTitle: Deutsch
+    hreflang: de
+    direction: ltr
+    flag: de
+  -
     title: English
     enabled: true
-    languageId: 0
     base: /en/
     typo3Language: default
-    locale: en_US.UTF-8
+    locale: en_GB.UTF-8
     iso-639-1: en
     navigationTitle: English
-    hreflang: en-us
-    direction: ltr
-    flag: us
+    hreflang: en-GB
+    direction: ''
+    fallbackType: strict
+    fallbacks: ''
+    flag: gb
+    languageId: '1'
 rootPageId: 1
 routes: {  }
