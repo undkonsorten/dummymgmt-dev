@@ -1,0 +1,16 @@
+{
+    "name": "undkonsorten/dummymgmt-site",
+    "type": "typo3-cms-extension",
+    "description": "Site package to test bidirectional relations with translated data in TYPO3 extension.",
+    "homepage": "https://github.com/undkonsorten/dummymgmt-dev",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Undkonsorten\\DummymgmtSite\\": "Classes/"
+        }
+    }
+}

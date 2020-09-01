@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+    <h1>Listing for Project</h1>
+
+    <f:flashMessages />
+
+    <table  class="tx_dummymgmt" >
+        <tr>
+            <th><f:translate key="tx_dummymgmt_domain_model_project.title" /></th>
+            <th> </th>
+            <th> </th>
+        </tr>
+<f:debug>{projects}</f:debug>
+        <f:for each="{projects}" as="project">
+            <tr>
+                <td><f:link.action action="show" arguments="{project : project}">{project.title}</f:link.action></td>
+            </tr>
+        </f:for>
+    </table>
+
+    <f:link.action action="new">New Project</f:link.action>
+</f:section>
+</html>

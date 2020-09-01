@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:dummymgmt/Resources/Private/Language/locallang_csh" date="2020-08-28T13:51:35Z" product-name="dummymgmt">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="projects.description" resname="projects.description">
+				<source>projects</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

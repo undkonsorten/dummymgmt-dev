@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-dummymgmt" >
+	<tr>
+		<td>
+		{project.title}
+		</td>
+	</tr>
+    <tr>
+		<td>
+            <f:for as="publication" each="{project.publications}">
+                <f:link.action action="show" controller="Publication" arguments="{publication:publication}" pageUid="2100">{publication.title}</f:link.action><br />
+            </f:for>
+		</td>
+	</tr>
+    <tr>
+		<td>
+            <f:if condition="{project.employees}">
+                <f:then>
+                    <f:for as="employee" each="{project.employees}">
+                        <f:link.action action="show" controller="Employee" arguments="{employee:employee}" pageUid="2100">{employee.name}</f:link.action><br />
+                    </f:for>
+                </f:then>
+                <f:else>keine mitarbeiterdaten</f:else>
+            </f:if>
+		</td>
+	</tr>
+</table>
+</html>

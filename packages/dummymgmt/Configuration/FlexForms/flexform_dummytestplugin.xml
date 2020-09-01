@@ -1,0 +1,36 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Display projects</numIndex>
+										<numIndex index="1">Project-&gt;list;Project-&gt;show</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Display publications</numIndex>
+										<numIndex index="1">Publication-&gt;list;Publication-&gt;show</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">Display employees</numIndex>
+										<numIndex index="1">Employee-&gt;list;Employee-&gt;show</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:dummymgmt/Resources/Private/Language/locallang" date="2020-08-28T13:51:35Z" product-name="dummymgmt">
+		<header/>
+		<body>
+			<trans-unit id="tx_dummymgmt_domain_model_project" resname="tx_dummymgmt_domain_model_project">
+				<source>Project</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_project.title" resname="tx_dummymgmt_domain_model_project.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_project.publications" resname="tx_dummymgmt_domain_model_project.publications">
+				<source>Publications</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_project.employees" resname="tx_dummymgmt_domain_model_project.employees">
+				<source>Employees</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_publication" resname="tx_dummymgmt_domain_model_publication">
+				<source>Publication</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_publication.title" resname="tx_dummymgmt_domain_model_publication.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_publication.projects" resname="tx_dummymgmt_domain_model_publication.projects">
+				<source>Projects</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_employee" resname="tx_dummymgmt_domain_model_employee">
+				<source>Employee</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_employee.name" resname="tx_dummymgmt_domain_model_employee.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_employee.projects" resname="tx_dummymgmt_domain_model_employee.projects">
+				<source>Projects</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

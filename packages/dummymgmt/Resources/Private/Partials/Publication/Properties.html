@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-dummymgmt" >
+	<tr>
+		<td>
+		{publication.title}
+		</td>
+	</tr>
+    <tr>
+		<td>
+            <f:for as="project" each="{publication.projects}">
+                <f:link.action action="show" controller="Project" arguments="{project:project}" pageUid="2099">{project.title}</f:link.action><br />
+            </f:for>
+		</td>
+	</tr>
+</table>
+</html>

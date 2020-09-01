@@ -1,0 +1,23 @@
+{
+    "name": "undkonsorten/dummymgmt",
+    "type": "typo3-cms-extension",
+    "description": "Test multilanguge relation handling in extensions.",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Undkonsorten\\Dummymgmt\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Undkonsorten\\Dummymgmt\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "undkonsorten/dummymgmt": "self.version",
+        "typo3-ter/dummymgmt": "self.version"
+    }
+}
