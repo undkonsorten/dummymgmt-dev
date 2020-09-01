@@ -33,7 +33,8 @@
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
 		"undkonsorten/dummymgmt": "*@dev",
-		"undkonsorten/dummymgmt-site": "*@dev"
+		"undkonsorten/dummymgmt-site": "*@dev",
+		"typo3/cms-lowlevel": "^9.5"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

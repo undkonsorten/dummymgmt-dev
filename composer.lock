@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e29c8d731faad9b8cb721e91aab5d8a",
+    "content-hash": "1946f774fe4479d9f88d294c5fc95e58",
     "packages": [
         {
             "name": "bk2k/bootstrap-package",
@@ -4431,6 +4431,60 @@
                 }
             ],
             "description": "The Install Tool mounted as the module Tools>Install in TYPO3.",
+            "homepage": "https://typo3.org",
+            "time": "2020-07-28T08:36:31+00:00"
+        },
+        {
+            "name": "typo3/cms-lowlevel",
+            "version": "v9.5.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/lowlevel.git",
+                "reference": "cb2681405df87323a45fd0a46bb83997ad1c855a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/cb2681405df87323a45fd0a46bb83997ad1c855a",
+                "reference": "cb2681405df87323a45fd0a46bb83997ad1c855a",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.20"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "lowlevel"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Lowlevel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enables the 'Config' and 'DB Check' modules for technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.",
             "homepage": "https://typo3.org",
             "time": "2020-07-28T08:36:31+00:00"
         },
