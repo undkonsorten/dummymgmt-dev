@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7e434600ea4ba035989ab75e99f01ac",
+    "content-hash": "9e29c8d731faad9b8cb721e91aab5d8a",
     "packages": [
         {
             "name": "bk2k/bootstrap-package",
@@ -5198,7 +5198,55 @@
             }
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "undkonsorten/typo3-auto-login",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/undkonsorten/typo3-auto-login.git",
+                "reference": "10ec6279c022876a2c448c546598b41426f5420e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/undkonsorten/typo3-auto-login/zipball/10ec6279c022876a2c448c546598b41426f5420e",
+                "reference": "10ec6279c022876a2c448c546598b41426f5420e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.1 < 7.4",
+                "typo3/cms-core": "^9.5 || ^10.4"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpcov": "^5.0",
+                "typo3/testing-framework": "^4.0 || ^5.0 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".build/web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Undkonsorten\\TYPO3AutoLogin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Felix Althaus",
+                    "email": "felix.althaus@undkonsorten.com"
+                }
+            ],
+            "description": "Automatically authenticates a TYPO3 CMS back end user for development",
+            "time": "2020-04-28T09:02:30+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {

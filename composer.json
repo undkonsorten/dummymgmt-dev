@@ -43,5 +43,8 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
+	},
+	"require-dev": {
+		"undkonsorten/typo3-auto-login": "^1.1"
 	}
 }

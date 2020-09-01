@@ -1,10 +1,5 @@
 <?php
 
-/**
- * #ddev-generated: Automatically generated TYPO3 AdditionalConfiguration.php file.
- * ddev manages this file and may delete or overwrite the file unless this comment is removed.
- */
-
 if (getenv('IS_DDEV_PROJECT') == 'true') {
     $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
         $GLOBALS['TYPO3_CONF_VARS'],
@@ -38,4 +33,16 @@ if (getenv('IS_DDEV_PROJECT') == 'true') {
             ],
         ]
     );
+}
+
+// Global variables
+// ================
+$applicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
+
+// Include configuration files depending on context
+/** @noinspection PhpFullyQualifiedNameUsageInspection */
+$configurationFile = sprintf('%s../config/context/%s.php', PATH_site,
+    \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext());
+if (file_exists($configurationFile)) {
+    require_once $configurationFile;
 }
