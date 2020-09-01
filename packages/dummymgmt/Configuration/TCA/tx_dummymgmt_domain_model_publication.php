@@ -133,7 +133,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_dummymgmt_domain_model_project',
-                'foreign_table_where' => " AND tx_dummymgmt_domain_model_project.sys_language_uid=0 ORDER BY tx_dummymgmt_domain_model_project.title",
+                'foreign_table_where' => " AND tx_dummymgmt_domain_model_project.sys_language_uid=###REC_FIELD_sys_language_uid### ORDER BY tx_dummymgmt_domain_model_project.title",
                 'MM' => 'tx_dummymgmt_project_publication_mm',
                 'MM_opposite_field' => 'publications',
                 'size' => 10,
