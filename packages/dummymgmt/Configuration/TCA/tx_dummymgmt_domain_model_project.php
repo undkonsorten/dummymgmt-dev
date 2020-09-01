@@ -158,7 +158,6 @@ return [
             'l10n_mode' => 'exclude',
             'label' => 'LLL:EXT:dummymgmt/Resources/Private/Language/locallang_db.xlf:tx_dummymgmt_domain_model_project.employees',
             'config' => [
-//                'MM_table_where' => '{#uid_local} = ###THIS_UID###',
                 'type' => 'group',
                 'internal_type' => 'db',
                 'allowed' => 'tx_dummymgmt_domain_model_employee',
@@ -166,11 +165,6 @@ return [
 //                'foreign_table_where' => " AND tx_dummymgmt_domain_model_publication.sys_language_uid=0 ORDER BY tx_dummymgmt_domain_model_publication.title",
                 'MM' => 'tx_dummymgmt_project_employee_mm',
                 'multiple' => 1,
-                'suggestOptions' => [
-                    'default' => [
-                        'addWhere' => 'AND tx_dummymgmt_domain_model_employee.sys_language_uid=0 ORDER BY tx_dummymgmt_domain_model_employee.title'
-                    ]
-                ]
             ],
         ],
     ],
