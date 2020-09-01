@@ -9,7 +9,7 @@ namespace Undkonsorten\Dummymgmt\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2020 
+ *  (c) 2020
  *
  ***/
 /**
@@ -20,21 +20,21 @@ class Employee extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * name
-     * 
+     *
      * @var string
      */
     protected $name = '';
 
     /**
      * projects
-     * 
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<>
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Undkonsorten\Dummymgmt\Domain\Model\Project>
      */
     protected $projects = null;
 
     /**
      * Returns the name
-     * 
+     *
      * @return string $name
      */
     public function getName()
@@ -44,7 +44,7 @@ class Employee extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the name
-     * 
+     *
      * @param string $name
      * @return void
      */
@@ -68,7 +68,7 @@ class Employee extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Do not modify this method!
      * It will be rewritten on each save in the extension builder
      * You may modify the constructor of this class instead
-     * 
+     *
      * @return void
      */
     protected function initStorageObjects()
@@ -77,9 +77,9 @@ class Employee extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Adds a
-     * 
-     * @param  $project
+     * Adds a project
+     *
+     * @param \Undkonsorten\Dummymgmt\Domain\Model\Project $project
      * @return void
      */
     public function addProject($project)
@@ -88,9 +88,9 @@ class Employee extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Removes a
-     * 
-     * @param $projectToRemove The  to be removed
+     * Removes a project
+     *
+     * @param \Undkonsorten\Dummymgmt\Domain\Model\Project $projectToRemove The Project to be removed
      * @return void
      */
     public function removeProject($projectToRemove)
@@ -100,7 +100,7 @@ class Employee extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the projects
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<> $projects
      */
     public function getProjects()
@@ -110,7 +110,7 @@ class Employee extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the projects
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<> $projects
      * @return void
      */
