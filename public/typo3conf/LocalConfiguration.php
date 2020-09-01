@@ -103,7 +103,7 @@ return [
             'newTranslationServer' => true,
             'unifiedPageTranslationHandling' => true,
         ],
-        'sitename' => 'Dummymgmt test environment',
+        'sitename' => '// DEV - Dummymgmt test environment',
         'systemLogLevel' => 2,
         'systemMaintainers' => [
             1,
