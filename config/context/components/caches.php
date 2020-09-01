@@ -3,13 +3,13 @@
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['clearCacheSystem'] = 1;
 
 foreach([
-    'cache_core',
-    'cache_hash',
-    'cache_imagesizes',
-    'cache_pages',
-    'cache_pagesection',
-    'cache_phpcode',
-    'cache_rootline',
+    'core',
+    'hash',
+    'imagesizes',
+    'pages',
+    'pagesection',
+    'phpcode',
+    'rootline',
     'extbase_datamapfactory_datamap',
     'extbase_object',
     'extbase_reflection',
@@ -24,7 +24,7 @@ foreach([
 }
 
 foreach([
-	'cache_runtime',
+	'runtime',
 ] as $cacheKey) {
 	$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$cacheKey]['backend'] = 'TYPO3\CMS\Core\Cache\Backend\TransientMemoryBackend';
 }

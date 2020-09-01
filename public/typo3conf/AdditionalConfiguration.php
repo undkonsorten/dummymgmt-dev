@@ -1,5 +1,7 @@
 <?php
 
+use TYPO3\CMS\Core\Core\Environment;
+
 if (getenv('IS_DDEV_PROJECT') == 'true') {
     $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
         $GLOBALS['TYPO3_CONF_VARS'],
@@ -37,12 +39,12 @@ if (getenv('IS_DDEV_PROJECT') == 'true') {
 
 // Global variables
 // ================
-$applicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
+$applicationContext = Environment::getContext();
 
 // Include configuration files depending on context
 /** @noinspection PhpFullyQualifiedNameUsageInspection */
-$configurationFile = sprintf('%s../config/context/%s.php', PATH_site,
-    \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext());
+$configurationFile = sprintf('%s/config/context/%s.php', Environment::getProjectPath(),
+    $applicationContext);
 if (file_exists($configurationFile)) {
     require_once $configurationFile;
 }

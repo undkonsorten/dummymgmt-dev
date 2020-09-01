@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$WkVRcTdSa1NWYXF5N1pQSg$3jZAXUD5yChiHp9M/xTpRPPPvjBXeQi2UaxUJpl/VQA',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$b3o0bGVWaFNBN3pEVWZMbA$8U4TQ7XKrEe4v98VPJQyCQI//kYSHHRHPukA7ai3UsE',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -18,14 +18,7 @@ return [
             ],
         ],
     ],
-    'EXT' => [
-        'extConf' => [
-            'backend' => 'a:6:{s:14:"backendFavicon";s:0:"";s:11:"backendLogo";s:70:"EXT:bootstrap_package/Resources/Public/Images/Backend/backend-logo.svg";s:20:"loginBackgroundImage";s:80:"EXT:bootstrap_package/Resources/Public/Images/Backend/login-background-image.jpg";s:13:"loginFootnote";s:0:"";s:19:"loginHighlightColor";s:0:"";s:9:"loginLogo";s:68:"EXT:bootstrap_package/Resources/Public/Images/Backend/login-logo.svg";}',
-            'bootstrap_package' => 'a:8:{s:20:"disableCssProcessing";s:1:"0";s:17:"disableFontLoader";s:1:"0";s:24:"disableGoogleFontCaching";s:1:"0";s:27:"disablePageTsBackendLayouts";s:1:"0";s:28:"disablePageTsContentElements";s:1:"0";s:16:"disablePageTsRTE";s:1:"0";s:20:"disablePageTsTCEFORM";s:1:"0";s:20:"disablePageTsTCEMAIN";s:1:"0";}',
-            'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
-            'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
-        ],
-    ],
+    'EXT' => [],
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',
@@ -104,7 +97,6 @@ return [
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => '// DEV - Dummymgmt test environment',
-        'systemLogLevel' => 2,
         'systemMaintainers' => [
             1,
         ],
