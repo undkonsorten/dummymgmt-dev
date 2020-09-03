@@ -9,6 +9,9 @@
 			<trans-unit id="tx_dummymgmt_domain_model_project.title" resname="tx_dummymgmt_domain_model_project.title">
 				<source>Title</source>
 			</trans-unit>
+			<trans-unit id="tx_dummymgmt_domain_model_project.nonetranslatedfield" resname="tx_dummymgmt_domain_model_project.nonetranslatedfield">
+				<source>None translated field</source>
+			</trans-unit>
 			<trans-unit id="tx_dummymgmt_domain_model_project.publications" resname="tx_dummymgmt_domain_model_project.publications">
 				<source>Publications</source>
 			</trans-unit>

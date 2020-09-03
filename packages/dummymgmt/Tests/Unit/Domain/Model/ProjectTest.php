@@ -50,6 +50,31 @@ class ProjectTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
     /**
      * @test
      */
+    public function getNonetranslatedfieldReturnsInitialValueForString()
+    {
+        self::assertSame(
+            '',
+            $this->subject->getNonetranslatedfield()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setNonetranslatedfieldForStringSetsNonetranslatedfield()
+    {
+        $this->subject->setNonetranslatedfield('Conceived at T3CON10');
+
+        self::assertAttributeEquals(
+            'Conceived at T3CON10',
+            'nonetranslatedfield',
+            $this->subject
+        );
+    }
+
+    /**
+     * @test
+     */
     public function getPublicationsReturnsInitialValueForPublication()
     {
         $newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();

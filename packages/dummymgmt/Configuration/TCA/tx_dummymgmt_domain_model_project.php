@@ -20,10 +20,10 @@ return [
         'iconfile' => 'EXT:dummymgmt/Resources/Public/Icons/tx_dummymgmt_domain_model_project.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, publications, employees',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, nonetranslatedfield, publications, employees',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, publications, employees, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, nonetranslatedfield, publications, employees, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -119,6 +119,16 @@ return [
         'title' => [
             'exclude' => true,
             'label' => 'LLL:EXT:dummymgmt/Resources/Private/Language/locallang_db.xlf:tx_dummymgmt_domain_model_project.title',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
+        'nonetranslatedfield' => [
+            'exclude' => true,
+            'l10n_mode' => 'exclude',
+            'label' => 'LLL:EXT:dummymgmt/Resources/Private/Language/locallang_db.xlf:tx_dummymgmt_domain_model_project.nonetranslatedfield',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

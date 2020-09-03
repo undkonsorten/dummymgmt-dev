@@ -4,7 +4,8 @@
 CREATE TABLE tx_dummymgmt_domain_model_project (
 	title varchar(255) DEFAULT '' NOT NULL,
 	publications int(11) unsigned DEFAULT '0' NOT NULL,
-	employees int(11) unsigned DEFAULT '0' NOT NULL
+	employees int(11) unsigned DEFAULT '0' NOT NULL,
+    nonetranslatedfield varchar(255) DEFAULT '' NOT NULL
 
 );
 

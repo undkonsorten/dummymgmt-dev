@@ -9,7 +9,7 @@ namespace Undkonsorten\Dummymgmt\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2020 
+ *  (c) 2020
  *
  ***/
 /**
@@ -20,21 +20,28 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * title
-     * 
+     *
      * @var string
      */
     protected $title = '';
 
     /**
+     * nonetranslatedfield
+     *
+     * @var string
+     */
+    protected $nonetranslatedfield = '';
+
+    /**
      * publications
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Undkonsorten\Dummymgmt\Domain\Model\Publication>
      */
     protected $publications = null;
 
     /**
      * employees
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Undkonsorten\Dummymgmt\Domain\Model\Employee>
      */
     protected $employees = null;
@@ -54,7 +61,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Do not modify this method!
      * It will be rewritten on each save in the extension builder
      * You may modify the constructor of this class instead
-     * 
+     *
      * @return void
      */
     protected function initStorageObjects()
@@ -65,7 +72,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the title
-     * 
+     *
      * @return string $title
      */
     public function getTitle()
@@ -75,7 +82,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the title
-     * 
+     *
      * @param string $title
      * @return void
      */
@@ -85,8 +92,30 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
+    * Returns the nonetranslatedfield
+    *
+    * @return string $nonetranslatedfield
+    */
+    public function getNonetranslatedfield()
+    {
+        return $this->nonetranslatedfield;
+    }
+
+    /**
+     * Sets the nonetranslatedfield
+     *
+     * @param string $nonetranslatedfield
+     * @return void
+     */
+    public function setNonetranslatedfield($nonetranslatedfield)
+    {
+        $this->nonetranslatedfield = $nonetranslatedfield;
+    }
+
+
+    /**
      * Adds a Publication
-     * 
+     *
      * @param \Undkonsorten\Dummymgmt\Domain\Model\Publication $publication
      * @return void
      */
@@ -97,7 +126,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Publication
-     * 
+     *
      * @param \Undkonsorten\Dummymgmt\Domain\Model\Publication $publicationToRemove The Publication to be removed
      * @return void
      */
@@ -108,7 +137,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the publications
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Undkonsorten\Dummymgmt\Domain\Model\Publication> $publications
      */
     public function getPublications()
@@ -118,7 +147,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the publications
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Undkonsorten\Dummymgmt\Domain\Model\Publication> $publications
      * @return void
      */
@@ -129,7 +158,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Employee
-     * 
+     *
      * @param \Undkonsorten\Dummymgmt\Domain\Model\Employee $employee
      * @return void
      */
@@ -140,7 +169,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Employee
-     * 
+     *
      * @param \Undkonsorten\Dummymgmt\Domain\Model\Employee $employeeToRemove The Employee to be removed
      * @return void
      */
@@ -151,7 +180,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the employees
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Undkonsorten\Dummymgmt\Domain\Model\Employee> $employees
      */
     public function getEmployees()
@@ -161,7 +190,7 @@ class Project extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the employees
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Undkonsorten\Dummymgmt\Domain\Model\Employee> $employees
      * @return void
      */

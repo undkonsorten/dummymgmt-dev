@@ -6,6 +6,9 @@
 			<trans-unit id="title.description" resname="title.description">
 				<source>title</source>
 			</trans-unit>
+			<trans-unit id="nonetranslatedfield.description" resname="nonetranslatedfield.description">
+				<source>Field just editable in default language.</source>
+			</trans-unit>
 			<trans-unit id="publications.description" resname="publications.description">
 				<source>publications</source>
 			</trans-unit>
